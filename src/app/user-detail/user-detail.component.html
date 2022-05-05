@@ -1,0 +1,30 @@
+<div [ngStyle]="{'max-width.px': 200}">
+    <p>ID: {{user.id}}</p>
+    <p>NAME: {{user.name}}</p>
+    <p>SURNAME: {{user.surname}}</p>
+    <p>DATE OF BIRTH: {{user.dateOfBirth | date: 'd / MMM / y'}}</p>
+    <p>AGE: {{user.age}}</p>
+    <hr>
+    <br>
+    <p class="address">Address:</p>
+    <br>
+    <p> CITY: {{user.address.city}}</p>
+    <p>POSTALCODE:{{user.address.postalCode}}</p>
+    <p>STREET: {{user.address.street}}</p>
+    <p>ROLE: {{user.role}}</p>
+    <p>USERNAME: {{user.username}}</p>
+    <p>GENDER: {{user.gender}}</p>
+    <hr>
+    <br>
+    <img [src]="user.profilePhotoUrl" alt="" width="200" >
+    <hr>
+    <br>
+    <p>COMPANY: {{user.companies[0].name}}</p>
+    <p>DESCRIPTION: {{user.companies[0].description}}</p>
+    <p>COMPANY: {{user.companies[1].name}}</p>
+    <p>DESCRIPTION{{user.companies[1].description}}</p>
+    <hr>
+</div>
+
+
+
