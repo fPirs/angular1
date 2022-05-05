@@ -14,5 +14,10 @@ export class UserListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  deleted(id:number): void {
+      const index = this.users.findIndex( (el) => el.id === id);
+      this.users.splice(index, 1);
 
+       
+  }
 }
