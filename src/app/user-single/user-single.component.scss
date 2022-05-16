@@ -1,9 +1,22 @@
-div{
+.container{
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border: 1px solid #040000;
+    &.staff{border: 2px solid aqua;}
+    &.manager{border: 2px solid red;}
+    &.student{border: 2px solid green;}
+    &.admin{border: 2px solid rebeccapurple;}
+
+}
+div{
+    height: 100%;
+    width: 300px;
+
 }
 img{
-    height: 140px;
+    width: 200px;
     border-radius: 15px;
 }
